@@ -1,0 +1,33 @@
+package first;
+import java.lang.Math;
+import java.util.Scanner;
+public class Sqrt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter any number to identify perfect square value or its nearest");
+		int num = obj.nextInt();
+		while(true)
+		{
+		double a= Math.sqrt(num);
+		
+		double c= Math.floor(a);
+		if(c*c==num)
+		{
+			System.out.println("Perfect square number is "+num);
+			break;
+		}
+		else
+		{
+			num++;
+			continue;
+		}
+			
+		}
+
+	}
+
+}
+
